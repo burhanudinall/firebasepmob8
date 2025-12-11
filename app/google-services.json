@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "206737321406",
+    "firebase_url": "https://pmob8-a4864-default-rtdb.firebaseio.com",
+    "project_id": "pmob8-a4864",
+    "storage_bucket": "pmob8-a4864.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206737321406:android:dba72de9d272effde21def",
+        "android_client_info": {
+          "package_name": "com.burhanudinal.firebase8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMUKiIGA78fvEfLVxQGh9SsN0cFc3VfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206737321406:android:e0fc8e9f11601840e21def",
+        "android_client_info": {
+          "package_name": "com.burhanudinal.firebasepmob8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMUKiIGA78fvEfLVxQGh9SsN0cFc3VfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
