@@ -37,14 +37,12 @@ class AddBookDialog(
                     val selectedCalendar = Calendar.getInstance()
                     selectedCalendar.set(selectedYear, selectedMonth, selectedDay)
 
-                    // Format baru: 12/12/2025
                     val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
                     dialogBinding.editTextRelease.setText(dateFormat.format(selectedCalendar.time))
                 },
                 year, month, day
             )
 
-            // Batasi tanggal minimal: hari ini
             dp.datePicker.minDate = System.currentTimeMillis()
 
             dp.show()
@@ -72,7 +70,6 @@ class AddBookDialog(
                             Toast.makeText(context, e.message, Toast.LENGTH_SHORT).show()
                         }
                     } else {
-                        // update existing
                         val updated = Book(title = title, release = release, description = desc)
                         booksRef.child(nodeKey).setValue(updated).addOnSuccessListener {
                             Toast.makeText(context, "Tugas diperbarui", Toast.LENGTH_SHORT).show()
