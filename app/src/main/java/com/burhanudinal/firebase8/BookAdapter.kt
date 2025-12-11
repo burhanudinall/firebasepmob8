@@ -55,7 +55,6 @@ class BookAdapter(
                 binding.tvRelease.alpha = 1f
             }
 
-            // Checkbox
             binding.checkDone.setOnCheckedChangeListener(null)
             binding.checkDone.isChecked = isDone
 
@@ -63,13 +62,11 @@ class BookAdapter(
                 book.done = isChecked
                 onToggleDone(book, position, isChecked)
 
-                notifyItemChanged(position) // refresh efek
+                notifyItemChanged(position) 
             }
 
-            // Delete
             binding.btnDelete.setOnClickListener { onDelete(book, position) }
 
-            // Edit
             binding.root.setOnClickListener { onEdit(book, position) }
         }
     }
